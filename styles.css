@@ -48,22 +48,63 @@ div h3 {
 }
 
 /*Styling start game button */
-.button{
+/* .button{
     background-color: #21314D;
     border: none;
     color: white;
     text-align: center;
+    padding: 15px 32px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-size: 16px;
     margin: 0 auto;
     padding: .5em;
-    /* padding-top: 1.5em; */
-    /* padding-bottom: .8em; */
+    padding-top: 1.5em;
+    padding-bottom: .8em;
     cursor: pointer;
     font-family: custom;
     border-radius: 10px;
+} */
+ 
+.button {
+  background-color: #21314D;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
+.dialogBox {
+  border-radius: 10px;
+  width: 300px; 
+  height: auto;
+  margin: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.5em;
+  background-color: bisque;
+}
+.dialogBox1 {
+  border-radius: 10px;
+  width: 300px; 
+  height: auto;
+  margin: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.5em;
+  background-color: bisque;
+}
+
+.dialogSpace {
+  padding: 0.5em;
+}
+
 /* Set black background color, white text and some padding */
 footer {
   background-color: #555;

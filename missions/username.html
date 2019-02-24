@@ -71,7 +71,7 @@
       <!--
       Game Canvas
       -->
-      <div id="gameBoard">
+      <!-- <div id="gameBoard">
         <h3 id="score">Score</h3>
         <h3 id="userScore">0</h3>
         <canvas id='myCanvas' width="500" height="500"></canvas>
@@ -85,11 +85,78 @@
             <button class="button" id="startButton">Start Game</button>
 				    <div id="failDiv"></div>
         </div>
-      </div>
+      </div> -->
       <!-- <canvas id="myCanvas" width="500" height="500" style="border:1px solid black; margin-left: 10%; background-color: white;"></canvas>
       <script src="../games/username.js"></script> -->
+      
+      <div style="width: 500px; height: 500px; margin:0 auto;">
+          <div id="parentDialog" style="width: 500px; height: 500px; background-color:rgb(127, 204, 255); margin:0 auto;">
+            <div class="dialogSpace"> </div>
+            <div class="dialogBox" id="tochange">
+                Hello, we are now going on to an advanture!
+            </div>
+            <!-- <div class="dialogBox1" id="a" tag="1">Okey, lets go"</div> -->
+            
+            <div id="tochange">
+                <script>
+                  function getUserName(){
+                    var Name = prompt("Type in your name");
+                    while (Name === "") {
+                    alert("Please type a name in the field!")
+                    var Name = prompt("Type in your name");
+                    } 
+                  }
 
+                  function prev() {
+                    // document.getElementById("tochange").innerHTML="This is now more text!";
+                    removeElement("a");
+                  }
+
+                  function next() {
+                    var html = "Okey, lets go";
+                    var parentid = "parentDialog";
+                    var CLASS = "dialogBox";
+                    var ID= "a";
+                    addElement(parentid, "div", CLASS, ID, html);
+                  }
+
+                  // function toggleDiv(id) {
+                  //   var div = document.getElementById(id);
+                  //   div.style.display = div.style.display == "none" ? "block" : "none";
+                  // }
+
+                  function addElement(parentId, elementTag, Class, elementId, html) {
+                    // Adds an element to the document
+                    var p = document.getElementById(parentId);
+                    var newElement = document.createElement(elementTag);
+                    newElement.setAttribute('id', elementId);
+                    newElement.setAttribute('class', Class);
+                    newElement.innerHTML = html;
+                    p.appendChild(newElement);
+                  }
+
+                  function removeElement(elementId) {
+                    // Removes an element from the document
+                    var element = document.getElementById(elementId);
+                    element.parentNode.removeChild(element);
+                  }
+
+                </script>
+            </div>
+
+
+
+              <p>This is some text in a location on the page.</p>
+              <div id="tochange">
+                <p >This is some more text.</p>
+              </div>
+            
+          </div>
+          <input onclick="prev()" type="button" class="button" style="float: left" value="Prev" />
+          <input onclick="next()" type="button" class="button" style="float: right"value="Next" />
+      </div>
     </div>
+
     <div class="col-sm-2 sidenav">
       <div class="well">
         <p>Contribute</p>
