@@ -91,6 +91,17 @@ div h3 {
   background-color: bisque;
 }
 
+.dialogBox1 {
+  border-radius: 10px;
+  width: 600px; 
+  height: auto;
+  margin: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.5em;
+  background-color: bisque;
+}
+
 .dialogSpace {
   padding: 0.5em;
 }
