@@ -3,17 +3,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- <script type="text/javascript" src="../games/username.js"></script> -->
 
   <title>K12 Social Engineering</title>
   <meta name="Social Engineering" content="K12 Education On Cyber Security">
   <meta name="Azam A, Orden A, Anthony R, Lindsey K" content="HackCU">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://github.com/goldfire/CanvasInput">
   <link rel="stylesheet" type="text/css" href="../styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
+
 
 </head>
 
@@ -58,12 +60,28 @@
       <p></p>
       <hr>
       <h3>Game Mechanics</h3>
-      <p>
+      <p style="text-align: center">
             Character: Alexender <br>
             Birthday: November 13th, 1993 <br>
             Age: 25 <br>
             Social Media: 3 <br>
       </p>
+      <!--
+      Game Canvas
+      -->
+      <div id="gameBoard">
+        <h3 id="score">Score</h3>
+        <h3 id="userScore">0</h3>
+        <canvas id='myCanvas' width="500" height="500"></canvas>
+        <br/><br/>
+        <div id="belowCanvas">
+            <button class="button" id="startButton">Start Game</button>
+				    <div id="failDiv"></div>
+        </div>
+      </div>
+      <!-- <canvas id="myCanvas" width="500" height="500" style="border:1px solid black; margin-left: 10%; background-color: white;"></canvas>
+      <script src="../games/username.js"></script> -->
+
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

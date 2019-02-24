@@ -1,7 +1,17 @@
+/*Our custom font */
+@font-face {
+  font-family: custom;
+  src: url(choco.ttf);
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+}
+
+canvas {
+  padding: 25px;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -14,6 +24,45 @@
   height: 100%;
 }
 
+/*Styling the score section */
+#gameBoard #score{
+  border-bottom: 1px solid black;
+  padding-bottom: .25em;
+}
+
+/*The column headers (instructions, score, etc.) */
+div h3 {
+  text-align: center;
+  font-family: custom;
+}
+
+/*The area around the canvas */
+#myCanvas {
+	display: block;
+	border: 4px double gray;
+	margin-left: auto;
+	margin-right: auto;
+  border-radius: 12px;
+    /*cursor:url("images/pickax.png"), auto;*/
+}
+
+/*Styling start game button */
+.button{
+    background-color: #21314D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: .5em;
+    padding-top: 1.5em;
+    padding-bottom: .8em;
+    cursor: pointer;
+    font-family: custom;
+    border-radius: 10px;
+}
 /* Set black background color, white text and some padding */
 footer {
   background-color: #555;
